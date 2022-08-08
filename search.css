@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: whitesmoke;
+    color:#222;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+     display: flex;
+     align-items: center;
+     justify-content: center; 
+     margin-top: 30px;
+}
+.products h2{
+    font-size: 14px;
+    padding-bottom: 20px;
+    color: rgb(1, 94, 255);
+}
+input{
+    color: darkgray;
+    width: 100%;
+    font-size: 22px;
+    border: none;
+    outline: none;
+    height: 45px;
+    border-radius: 10px;
+  
+}
+input::placeholder {
+    color: whitesmoke;
+    padding-left: 50px;
+}
+input:focus{
+    border: none;
+    outline: none;  
+}
+.las  {
+font-size: 22px;
+color: whitesmoke;
+position: relative;
+top: 30px;
+padding-left: 20px;
+
+
+
+}
+#close {
+    float: right;  
+padding-right: 30px;
+
+}
+
+.main {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: #fff;   
+    margin-top: 20px;
+    border-radius: 10px;
+}
+header {
+    border-bottom: 1px solid whitesmoke;
+}
+
+
+/* header ends here */
+p {
+   color: darkgray;
+   width: 18em;
+  
+}
+
+.products {
+    padding: 20px 10px; 
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+
+.info {
+    display: flex;
+    padding: 10px 10px;
+
+}
+.info:hover {
+ background: whitesmoke;
+}
+
+.flex {
+    padding: 0px 10px;
+    
+    
+    
+}
+img{
+width: 35px;
+
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
+  />
+  <link rel="stylesheet" href="search.css" />
+    <title>Search bar</title>
+</head>
+<body>
+   
+   
+    <div class="container">
+     
+        <div class="search-bar">
+            <!-- <i id="search" class="las la-search"></i>
+            <i id="close" class="las la-times"></i> -->
+            <input id="input-search" type="text" placeholder="Search"/>
+        <div class="main">
+            <div class="products">
+                <h2>List of group members</h2>
+     <div class="info">
+                    <div class="flex">
+      <img src="./Ellipse 49.png" alt="">
+    </div>
+                    <div class="content">
+                        <h3>Ope</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit..</p>
+                        <h4>from facebook</h4>
+                    </div>
+                </div>
+
+                    <div class="info">
+                        <div class="flex">
+                            <img src="./Ellipse 52.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Kaffy</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit..</p>
+                            <h4>from Instagram</h4>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="flex">
+                            <img src="./Ellipse 47.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Ogechi</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit..</p>
+                            <h4>from git club</h4>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="flex">
+                            <img src="./Ellipse 48.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Kelechi</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit..</p>
+                            <h4>from Church</h4>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="flex">
+                            <img src="./Ellipse 53.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Susannah</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit..</p>
+                            <h4>from club 48</h4>
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <div class="flex">
+                            <img src="./Ellipse 42.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Modupe</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit..</p>
+                            <h4>from facebook</h4>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="flex">
+                            <img src="./lady2 1.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Bukola</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit..</p>
+                            <h4>from facebook</h4>
+                        </div>
+                    </div>
+            
+                    <div class="info">
+                        <div class="flex">
+                            <img src="./Ellipse 40.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Magret</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit..</p>
+                            <h4>from twitter</h4>
+                        </div>
+                    </div>
+            
+                    <div class="info">
+                        <div class="flex">
+                            <img src="./Ellipse 43.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Seun</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit..</p>
+                            <h4>from Instagram</h4>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="flex">
+                            <img src="./Vector.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Agnes</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit..</p>
+                            <h4>from facebook</h4>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="flex">
+                            <img src="./Ellipse 38.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Winner</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit..</p>
+                            <h4>from single forum</h4>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="flex">
+                            <img src="./Ellipse 38.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Sonto</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit..</p>
+                            <h4>from club 48</h4>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="flex">
+                            <img src="./profile.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Amara</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit..</p>
+                            <h4>from club 48</h4>
+                        </div>
+                    </div>
+
+
+            </div>
+        </div>
+       
+    </div>
+    <script>
+let input = document.getElementById("input-search");
+//get list of value
+let list = document.querySelectorAll(".info");
+
+//function search on the list.
+function search (){
+  for(let i = 0; i < list.length; i += 1){
+   //check if the element contains the value of the input
+   if(list[i].innerText.toLowerCase().includes(input.value.toLowerCase())){
+     list[i].style.display = "flex";
+   }else{
+     list[i].style.display = "none";
+   }
+  }
+}
+
+//to the change run search.
+input.addEventListener('input', search);
+    </script>
+</body>
+
+</html>
